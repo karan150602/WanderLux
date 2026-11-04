@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request a travel consultation with WanderLux.">
+  <title>WanderLux | Appointment Request</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header><div class="container nav">
+  <a class="logo" href="index.html">Wander<span>Lux</span></a>
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="calculator.html">Calculator</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div></header>
+<main>
+  <div class="page-title"><h1>Request an Appointment</h1>
+    <p>Speak with our travel planning team.</p>
+  </div>
+  <section class="light">
+    <div class="form-box">
+      <form class="email-form" data-subject="Travel Appointment Request">
+        <label for="name">Full Name</label>
+        <input id="name" name="Name" required minlength="2">
+
+        <label for="email">Email Address</label>
+        <input id="email" name="Email" type="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input id="phone" name="Phone" type="tel" required
+          pattern="[0-9+() -]{8,20}" title="Enter a valid phone number">
+
+        <label for="date">Preferred Date</label>
+        <input id="date" name="Preferred Date" type="date" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" required></textarea>
+
+        <p><button class="btn" type="submit">Prepare Appointment Email</button></p>
+        <p><small>This demo opens your email app. It does not automatically send a request.</small></p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer>&copy; 2026 WanderLux Travel Agency. Educational project.</footer>
+</body>
+</html>

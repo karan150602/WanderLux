@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Estimate travel costs with the WanderLux trip calculator.">
+  <title>WanderLux | Trip Cost Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header><div class="container nav">
+  <a class="logo" href="index.html">Wander<span>Lux</span></a>
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="calculator.html">Calculator</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div></header>
+<main>
+  <div class="page-title">
+    <h1>Trip Cost Calculator</h1>
+    <p>Plan your journey with an instant estimate.</p>
+  </div>
+  <section class="light">
+    <div class="form-box reveal">
+      <form id="trip-form">
+        <label for="destination">Destination</label>
+        <select id="destination" required>
+          <option value="">Choose a destination</option>
+          <option>Bali</option>
+          <option>Japan</option>
+          <option>Paris</option>
+          <option>Sydney</option>
+          <option>Singapore</option>
+        </select>
+
+        <label for="travellers">Number of Travellers</label>
+        <input id="travellers" type="number" min="1" max="50" value="2" required>
+
+        <label for="days">Number of Days</label>
+        <input id="days" type="number" min="1" max="90" value="5" required>
+
+        <label for="style">Travel Style</label>
+        <select id="style" required>
+          <option>Budget</option>
+          <option selected>Standard</option>
+          <option>Luxury</option>
+        </select>
+
+        <p><button class="btn" type="submit">Calculate Estimate</button></p>
+      </form>
+      <div id="result" class="result" role="status" aria-live="polite">
+        Your estimated trip cost will appear here.
+      </div>
+    </div>
+  </section>
+</main>
+<footer>&copy; 2026 WanderLux Travel Agency. Educational project.</footer>
+</body>
+</html>
